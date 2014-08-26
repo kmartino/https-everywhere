@@ -71,7 +71,7 @@ function testRunner() {
     } else {
       // target is like *.example.wildcard.com, let's see what we can do...
       t = target.replace("*.", "www.");
-      if (!(t in targets)) { addTestTarget(urls, t, ruleset_ids); }
+      if (!(t in targets_to_ids)) { addTestTarget(urls, t, ruleset_ids); }
     }
   }
 
